@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOMO</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="#"
+            ><img
+              src="./assets/img/logo.png"
+              alt="Logo"
+              width="70px"
+              height="70px"
+          /></a>
+        </div>
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">Pages</a>
+            <img
+              src="./assets/img/flecha-hacia-abajo.png"
+              alt="flecha-hacia-abajo"
+              width="15px"
+              height="15px"
+            />
+          </li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Cart [0]</a></li>
+        </ul>
+        <button class="btn-consultation">
+          Free Consultation
+          <img
+            class="arrow"
+            src="./assets/img/flecha-correcta.png"
+            alt="flecha"
+            height="13px"
+            width="13px"
+          />
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome-section">
+        <div class="welcome-box">
+          <h1>Welcome to BusinessX</h1>
+        </div>
+        <h2>
+          Join us in growing your <span class="underline">business</span>.
+        </h2>
+        <hr class="separator" />
+        <p class="elevate">
+          Elevate your business with BusinessX, a professional Webflow template.
+        </p>
+        <button class="btn-contact">
+          Contact us
+          <img
+            src="./assets/img/flecha-correcta.png"
+            alt="flecha-correcta"
+            width="13px"
+            height="13px"
+          />
+        </button>
+      </section>
+      <aside class="consultation-form">
+        <div class="form-back">
+          <div class="book">
+            <h1>Book your free consultation</h1>
+          </div>
+          <h2 class="get">Get a free consultation</h2>
+          <form action="#">
+            <div class="input-div">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="contact@email.com" />
+            </div>
+            <textarea placeholder="Please type your message here..."></textarea>
+            <button type="submit">Get in Touch</button>
+          </form>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p>© 2024 DOMO. All rights reserved.</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuIcon = document.querySelector(".menu-icon");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuIcon.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>
